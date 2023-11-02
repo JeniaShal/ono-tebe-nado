@@ -10,36 +10,63 @@
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
-    <div class="section header">
-      <nav class="header-menu">
-        <ul class="header_links-list">
-          <li class="header__links-list-item_no-bullet">
-            <a class="header_link_active">
-              главная
-            </a>
+    <header class="section header">
+      <nav class="menu header-menu">
+        <ul class="menu-list header-menu-list header_and_footer_text">
+          <li class="menu-list-item header-menu-list-item">
+            <a class="menu-list-item-link">главная</a>
           </li>
-          <li class="header_links-list-item">
-            <a class="header_link" href="#0">
-              посмотреть лоты
-            </a>
+          <li class="menu-list-item header-menu-list-item">
+            <a class="menu-list-item-link" href="#0">посмотреть лоты</a>
           </li>
-          <li class="header_links-list-item">
-            <a class="header_link" href="#0">об аукционе</a>
+          <li class="menu-list-item header-menu-list-item">
+            <a class="menu-list-item-link" href="#0">об аукционе</a>
           </li>
         </ul>
       </nav>
       <div class="header-logo">
-        <img class="header-logo-image" src="./images/logo-black.svg"/>
+        <div class="header-logo-container">
+          <img class="header-logo-image" src="./images/logo-black.svg" alt="Логотип оно тебе надо черного цвета"/>
+        </div>
       </div>
-      <div class="address">
-        <a href="tel:+99995555555">+9 999 555 5555</a>
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <address class="header-address">наб. Принсенграхт 263-265, Амстердам</address>  
+      <div class="address header_and_footer_text">
+        <a class="phone" href="+99995555555">+9 999 555 5555</a>
+        <a class="e-mail" href="info@sobaka.ge">info@sobaka.ge</a>
+        <address class="header-address">наб. Принсенграхт 263-265, Амстердам</address>
       </div>
-    </div>
-    <div class="section cover"></div>
-    <div class="section lots"></div>
-    <div class="section about"></div>
-    <div class="section footer"></div>
+    </header>
+    <section class="section cover">
+      <div class="overlay cover-overlay">
+      </div>
+      <h1 class="cover-title">
+        <p class="aligned-text">он
+          <span class="extended-letter">
+            о
+          </span>
+        </p>
+        <span class="aligned-text-center">теб
+          <span class="extended-letter">
+            е
+          </span>
+        </span>
+        <span class="aligned-text-right">
+          <span class="extended-letter">
+            н
+          </span>
+          адо
+        </span>
+      </h1> 
+      <div class="cover-description">
+        <p class="cover-desription-text cover-desription-text-format">
+          аукцион вещей, в который никто не верил
+        </p>
+        <button class="bet-button">
+          Сделать ставку
+        </button>
+      </div>
+    </section>
+    <section class="section lots"></section>
+    <section class="section about"></section>
+    <footer class="section footer"></footer>
   </body>
 </html>
