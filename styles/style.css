@@ -3,8 +3,7 @@
   padding-right: 50px;
   font-family: Raleway, sans-serif;
   margin: auto;
-  width: 1440px;
-  border: 1px solid  #000;  /* потом убрать */
+  max-width: 1440px;
 }
 
 .header{
@@ -13,7 +12,7 @@
   width: 100%;
   height: 293px;
   display: grid;
-  grid-template-columns: 0.8fr 1fr 0.3fr 0.7fr;
+  grid-template-columns: 1fr 1fr 0.4fr 0.6fr;
   /* gap: 20px; */
   align-items: center;
 }
@@ -76,7 +75,7 @@
 }
 
 .cover {
-  width: 100%;
+  width: 1440px;
   height: 757px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
@@ -106,20 +105,66 @@
   text-transform: uppercase;
 }
 
-.aligned-text-center {
+.aligned-text {
+  letter-spacing: 30px;
+  line-height: 116%;
   display: block;
+  width: 100%;
+}
+
+.extended-letter {
+  letter-spacing: 60px;
+}
+
+.last-letter {
+  letter-spacing: 0px;
+}
+
+.aligned-text-center {
+  letter-spacing: 30px;
   text-align: center;
+  line-height: 140%;
+  display: block;
 }
 
 .aligned-text-right{
+  letter-spacing: 30px;
+  line-height: 105%;
   display: block;
   text-align: right;
 }
 
 .cover-description {
+  width: 100%;
+  height: 180px;
   display: flex;
   align-items: flex-end;
+}
 
+.cover-description-container{
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .cover-desription-text {
+  padding-top: 12px;
+  padding-right:75px;
+  text-align: right;
+  word-spacing: 17px;
+  flex-grow: 1;
+} 
+
+  .cover-description-text-extended-part{
+  word-spacing: 20px;
+}
+
+  .bet-button {
+  width: 257px;
+  height: 52px;
+  background-color: transparent;
+  border: 1px solid #FFF;
 }
 
 .cover-desription-text-format {
@@ -131,6 +176,12 @@
   line-height: 28px; /* 127.273%*/
   text-transform: uppercase;
 }
+
+
+
+
+
+
 
 
 
