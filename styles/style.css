@@ -266,7 +266,7 @@
   padding-left: 40px;
   color: #000;
   font-size: 20px;
-  font-style: normal; 
+  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
@@ -286,7 +286,7 @@
 .about-logo {
   grid-column: 1;
   min-width: 240px;
-  min-height: 240px; 
+  min-height: 240px;
   border-radius: 50%;
   background-color: #000;
   justify-self: center;
