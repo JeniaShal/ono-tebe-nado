@@ -7,7 +7,7 @@
 }
 
 .header {
-  padding-top: 92px;
+  padding-top: 89px;
   padding-bottom: 92px;
   min-height: 289px;
   display: grid;
@@ -59,7 +59,6 @@
 }
 
 .header-logo-image {
-  /* width:100%; */
   height: 100%;
 }
 
@@ -83,7 +82,7 @@
   background-image: url(../images/cover.jpg);
   background-size: cover;
   position: relative;
-  padding: 170px 50px 50px 50px;
+  padding: 171px 50px 50px 50px;
   
   z-index: -2;
 }
@@ -181,8 +180,8 @@
 }
 
 .lots {
-  padding-top: 182px;
-  padding-bottom: 180px;
+  padding-top: 180px;
+  padding-bottom: 90px;
 }
 
 .lot-and-about-heading {
@@ -273,12 +272,13 @@
 }
 
 .about {
-  padding-bottom: 179px;
+  padding-top: 88px;
+  padding-bottom: 89px;
 }
 
 .about-column {
   display: grid;
-  grid-template-columns: 29,9% 1fr;
+  grid-template-columns: 430px 1fr;
   column-gap: 25px;
   grid-template-rows: 240px 1fr;
 }
@@ -310,7 +310,7 @@
 .about-text {
   grid-column: 2/3;
   grid-row: 2/3;
-  padding-top: 10px;
+  padding-top: 7px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -326,6 +326,7 @@
 }
 
 .footer {
+  padding-top: 90px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-bottom: 90px;
