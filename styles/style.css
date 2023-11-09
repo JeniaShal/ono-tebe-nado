@@ -1,7 +1,7 @@
 .section {
   padding-left: 50px;
   padding-right: 50px;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Aerial, sans-serif;
   margin: auto;
   max-width: 1440px;
 }
@@ -9,7 +9,6 @@
 .header {
   padding-top: 89px;
   padding-bottom: 92px;
-  min-height: 289px;
   display: grid;
   grid-template-columns: 1fr 1fr 0.4fr 0.6fr;
   gap: 3px;
@@ -30,7 +29,12 @@
   list-style: none;
 }
 
+.header-menu-list-item-link_active {
+  text-decoration: none;
+}
+
 .header-and-footer-text {
+  font-family: Raleway, Aerial, sans-serif;
   line-height: 135%;
   display: flex;
   flex-direction: column;
@@ -44,7 +48,7 @@
   line-height: normal;
 }
 
-.header-logo {
+.header-logo-container {
   grid-column: 2/3;
   max-width: 142px;
   max-height: 106px;
@@ -78,13 +82,11 @@
 
 .cover {
   min-width: 1440px;
-  height: 757px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   position: relative;
-  padding: 171px 50px 50px 50px;
-  
-  z-index: -2;
+  padding: 165px 50px 50px 50px;
+  z-index: 0;
 }
 
 .overlay {
@@ -94,24 +96,29 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -1;
+  z-index: 1;
 }
 
 .cover-title {
+  position: relative;
   color: #FFF;
-  font-family: Raleway;
+  font-family: Raleway, Aerial, sans-serif;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
   line-height: 100%; /* 100px */
   text-transform: uppercase;
+  gap: 20px;
+  z-index: 2;
 }
 
 .aligned-text {
+  line-height: 115%;
   letter-spacing: 30px;
-  line-height: 106%;
   display: block;
   width: 100%;
+  z-index: 2;
+  margin-bottom: 20px;
 }
 
 .extended-letter {
@@ -119,29 +126,32 @@
 }
 
 .last-letter {
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .aligned-text-center {
   letter-spacing: 30px;
   text-align: center;
-  line-height: 148%;
+  line-height: 100%;
   display: block;
+  margin-bottom: 20px;
 }
 
 .aligned-text-right {
   letter-spacing: 30px;
-  line-height: 91%;
+  line-height: 100%;
   display: block;
   text-align: right;
-  
+  margin-bottom: 135px;
 }
 
 .cover-description {
+  position: relative;
   width: 100%;
-  min-height: 190px;
   display: flex;
   align-items: flex-end;
+  align-self: flex-end;
+  z-index: 2;
 }
 
 .cover-description-container {
@@ -152,20 +162,17 @@
 }
 
 .cover-desription-text {
-  padding-right:75px;
+  padding-right: 75px;
   text-align: right;
-  word-spacing: 16px;
+  word-spacing: 19px;
+  align-self: center;
   flex-grow: 1;
-  
 } 
 
-.cover-description-text-extended-part {
-  word-spacing: 22px;
-}
-
 .bet-button {
+  padding-top: 12px;
+  padding-bottom: 12px;
   min-width: 257px;
-  min-height: 52px;
   background-color: transparent;
   border: 1px solid #FFF;
 }
@@ -207,6 +214,7 @@
 .lot-card {
   min-width: 430px;
   min-height: 450px;
+  margin-bottom: 30px;
 }
 
 .card-link {
@@ -218,31 +226,32 @@
   height: 100%;
   padding: 50px 40px;
   position: relative;
-  z-index: -2;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.lot-card-Anderson {
+.lot-card-anderson {
   background-image: url(../images/card-lot-01.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.lot-card-Joice {
+.lot-card-joice {
   background-image: url(../images/card-lot-02.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.lot-card-Kandinsky {
+.lot-card-kandinsky {
   background-image: url(../images/card-lot-03.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .lot-card-heading {
+  position: relative;
   color: #FFF;
   font-size: 22px;
   font-style: normal;
@@ -250,14 +259,17 @@
   line-height: 120%; /* 26.4px */
   text-decoration-line: underline;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 .lot-card-text {
+  position: relative;
   color: #FFF;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 24px */
+  z-index: 2;
 }
 
 .link-see-more {
@@ -272,8 +284,8 @@
 }
 
 .about {
-  padding-top: 88px;
-  padding-bottom: 89px;
+  padding-top: 89px;
+  padding-bottom: 88px;
 }
 
 .about-column {
@@ -326,7 +338,7 @@
 }
 
 .footer {
-  padding-top: 90px;
+  padding-top: 92px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-bottom: 90px;
@@ -362,6 +374,10 @@
   display: block;
   height: 100%;
   width: 100%;
+}
+
+.footer-menu-list-item-link_active {
+  text-decoration: none;
 }
 
 .footer-social-list-logo {
