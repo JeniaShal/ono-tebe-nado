@@ -1,7 +1,7 @@
 .section {
   padding-left: 50px;
   padding-right: 50px;
-  font-family: Raleway, Aerial, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   margin: auto;
   max-width: 1440px;
 }
@@ -34,7 +34,7 @@
 }
 
 .header-and-footer-text {
-  font-family: Raleway, Aerial, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   line-height: 135%;
   display: flex;
   flex-direction: column;
@@ -102,7 +102,7 @@
 .cover-title {
   position: relative;
   color: #FFF;
-  font-family: Raleway, Aerial, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
@@ -292,7 +292,7 @@
   display: grid;
   grid-template-columns: 430px 1fr;
   column-gap: 25px;
-  grid-template-rows: 240px 1fr;
+  grid-template-rows: min-content 1fr;
 }
 
 .about-logo {
